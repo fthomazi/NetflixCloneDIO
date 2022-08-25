@@ -1,0 +1,116 @@
+:root{ 
+    --vermelho: #E50914;
+    --preta: #141414;
+ }
+
+
+*{ 
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+ /*Elemento base*/
+body{ 
+    background: var(--preta);
+    font-family: 'Arial', Times, serif;
+    color: white;
+ }
+ 
+
+ header .container{ 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+ }
+
+
+ header .logo{ 
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times; 
+    font-size: 50px;
+    margin-left: 20px;
+ }
+
+
+ header nav a{ 
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 20PX;
+ }
+
+
+ header nav a:hover{ 
+    color: #fff;
+ }
+
+
+
+/*Filme principal*/
+.filmeprincipal .container { 
+   /*background-image: url('../img/capa.jpg');*/
+   background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('../img/capa.jpg');
+   font-size: 16px;
+   background-position: center;
+   background-repeat: no-repeat;
+
+   /*width: 100%;
+   min-height: 700px;*/
+
+   height: 600px;
+   background-size: cover;
+
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: flex-start;
+}
+
+.filmeprincipal .descricao{ 
+   margin-bottom: 40px;
+   margin-top: 10px;
+   margin-left: 20px;
+   width: 80%; 
+}
+
+.filmeprincipal .titulo{ 
+   margin-top: 15%;
+   font-size: 35px;
+   font-family: 'Trebuchet MS', Arial, sans-serif;
+   margin-left: 20px;
+   width: 80%;
+}
+
+.filmeprincipal .botao{ 
+   background-color: rgba(0,0,0,.50); /*RGBA e modelo transparente*/
+   border: none;
+   color: white;
+
+   padding: 15px 30px; /*lida com a parte interna do elemento, cada medida, um lado*/
+   margin-right: 15px;
+   margin-left: 20px;
+   font-size: 12px;
+
+   cursor: pointer;
+   transition: .3s ease all; /*Cuida a transição entre um e outro elemento, exemplo de 3 segundos*/
+}
+
+.filmeprincipal .botao:hover{  /*operacao inversa, quando passar mouse muda cor*/
+   background-color: white;
+   color: black;
+}
+
+.filmeprincipal .botao i{  /*espaco icones botao*/
+   margin-right: 8px;
+}
+
+.boxfilmes{  /*Configuracao das mini imagens*/
+   height: 100%;
+   width: 100%;
+   display: block;
+}
+
+.carroselfilmes{  
+   margin-top: 5px;
+}
